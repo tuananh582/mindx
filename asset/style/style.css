@@ -1,0 +1,78 @@
+:root{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300px;
+}
+.all{
+    
+       position: relative;
+        left: 45%;
+        width: 400px;
+        display: block;
+}
+.title{
+   
+   
+   position: relative;
+    top: 170px;
+    left: -100px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 24px;
+
+    
+}
+body{
+    /* background-color: whitesmoke; */
+   
+    background-image: url(https://www.shutterstock.com/image-photo/texture-transparent-skeleton-leaves-blue-260nw-1765294499.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.form{
+    /* display: flex; */
+   
+    background-color: white;
+    
+    padding: 30px;
+    margin-bottom: 30px;
+    width: 340px;
+    height: 250px;
+  position: relative;
+  margin-top: 200px;
+  margin-left: -100px;
+   
+}
+
+/* .form-g{
+   margin
+ 
+
+} */
+input{
+    width: 280px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid whitesmoke;
+}
+label{
+    padding: 12px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: -10px;
+    bottom: 10px;
+    
+
+}
+.forgot{
+    position: relative;
+    padding: 20px;
+    top: -10px;
+}
+
