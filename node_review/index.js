@@ -56,7 +56,7 @@ app.post('/import', async (req, res) => {
   }
 });
 
-// API to get all products in inventory
+//  get all products in inventory
 app.get('/api/products', authenticateToken, async (req, res) => {
   try {
     const products = await Inventory.find({});
