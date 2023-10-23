@@ -1,14 +1,11 @@
-// Import required libraries
 const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const app = express();
-
-// Connect to MongoDB
+app.use(bodyParser.json());
 mongoose.connect('mongodb://localhost:27017/mindxcuoiky', { useNewUrlParser: true, useUnifiedTopology: true });
 
-// Define MongoDB schemas and models
 const inventorySchema = new mongoose.Schema({
   sku: String,
   description: String,
@@ -29,8 +26,6 @@ const orderSchema = new mongoose.Schema({
 });
 const Order = mongoose.model('Order', orderSchema);
 
-// Middlewares
-app.use(bodyParser.json());
 
 // JWT Secret Key
 const JWT_SECRET_KEY = 'mysecretkey';
@@ -81,7 +76,7 @@ app.get('/api/products/lowquantity', authenticateToken, async (req, res) => {
   }
 });
 
-// API for user login and token generation
+// API login and token generation
 app.post('/api/login', async (req, res) => {
   const { username, password } = req.body;
   const user = await User.findOne({ username, password });
@@ -105,7 +100,7 @@ app.get('/api/orders', authenticateToken, async (req, res) => {
   }
 });
 
-// Start server
-app.listen(3000, () => {
+const PORT=3000;
+app.listen(PORT, () => {
   console.log('Server is running on port 3000');
 });
