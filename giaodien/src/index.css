@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-left: 10px;
+}
+.App{
+  border: 1px solid;
+  padding: 10px;
+  width: 500px;
+  box-shadow: 5px 10px 18px #333;
+}
+body{
+  top: 50%;
+  left: 50%;
+  background-image: linear-gradient(#e4a9fc,#957d9e,#e8d3f0);
+  height: 100vh;
+}
